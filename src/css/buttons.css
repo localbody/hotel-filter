@@ -1,0 +1,108 @@
+.button {
+    cursor: pointer;
+    color: #fff;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 0.85px;
+    display: block;
+    transition: all 0.3s;
+}
+
+.button--transparent {
+    border: 2px solid white;
+    background: transparent;
+    width: 133px;
+}
+
+.button--transparent:hover {
+    border: 2px solid #c19b76;
+    background-color: #c19b76;
+}
+
+.button--toupe-border-white {
+    background-color: #c19b76;
+    width: 105px;
+    border: 2px solid white;
+}
+
+.button--toupe-border-white:hover {
+    border: 2px solid #c19b76;
+    background-color: white;
+    color: #c19b76;
+}
+
+.button--toupe {
+    background-color: #c19b76;
+    width: 105px;
+    border: none;
+}
+
+.button--toupe:hover {
+    background-color: white;
+    color: #c19b76;
+}
+
+.button--black {
+    background-color: #151515;
+    width: 175px;
+}
+
+.button--black:hover {
+    background-color: #c19b76;
+}
+
+.button--white-toupe {
+    border: 2px solid #c19b76;
+    color: #c19b76;
+    font-size: 8.5px;
+    width: 165px;
+}
+
+.button--white-toupe:hover {
+    background-color: #c19b76;
+    color: white;
+}
+
+
+/* media */
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .button {
+        height: 25px;
+        line-height: 3;
+    }
+    .button--transparent {
+        width: 145px;
+    }
+    .button--toupe {
+        width: 115px;
+    }
+    .button--white-toupe {
+        font-size: 9px;
+        height: 28px;
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 85px;
+        line-height: 1.25;
+        padding-top: 7px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .button--transparent {
+        width: 240px;
+        height: 52px;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 3;
+    }
+    .button--black {
+        width: 335px;
+        height: 61px;
+        font-size: 18px;
+        line-height: 3.33;
+    }
+}

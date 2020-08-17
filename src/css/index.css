@@ -1,0 +1,599 @@
+/* header */
+
+.check-form {
+    /*  */
+    width: 540px;
+    height: 108px;
+    background-color: white;
+    margin-top: 105px;
+}
+
+.form {
+    display: flex;
+    height: 100%;
+}
+
+.form__item:not(.form__item-button) {
+    margin-top: 25px;
+}
+
+.form__item-check {
+    flex: 25%;
+    display: grid;
+    grid-template-areas: "label month" "input month";
+    grid-template-columns: min-content;
+    grid-template-rows: min-content;
+    justify-content: end;
+    justify-items: center;
+}
+
+.form__item-guest {
+    flex: 25%;
+    display: grid;
+    grid-template-areas: "label""input";
+    grid-template-columns: min-content;
+    grid-template-rows: min-content;
+    justify-content: center;
+    justify-items: center;
+}
+
+.form__label {
+    grid-area: label;
+    text-transform: uppercase;
+    height: 12px;
+    color: #a3a3a3;
+}
+
+.form__input {
+    grid-area: input;
+    width: 60px;
+    height: 40px;
+    border: solid 0.8px #a3a3a3;
+    background-color: white;
+    font-family: 'Gilda Display', serif;
+    font-size: 40px;
+    line-height: 0.55;
+    letter-spacing: -2.25px;
+    text-align: center;
+}
+
+.form__select {
+    grid-area: month;
+    width: 40px;
+    height: 50px;
+    margin-top: 10px;
+    /* appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; */
+    border: none;
+    font-family: 'Gilda Display', serif;
+    font-size: 13px;
+    line-height: 2.28;
+    letter-spacing: -0.54px;
+    color: #1c1c1c;
+    background: transparent;
+    vertical-align: top;
+}
+
+.form__item-button {
+    /*  */
+    flex: 25%;
+    background-color: #1c1c1c;
+}
+
+.form__button {
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding-top: 33.3%;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: all 0.3s;
+}
+
+.form__button:hover {
+    background-color: #c19b76;
+}
+
+
+/* about */
+
+.about {
+    display: flex;
+    box-sizing: border-box;
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+
+.about__info {
+    width: 550px;
+    box-sizing: border-box;
+    padding-left: 75px;
+    padding-right: 75px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__subtitle {
+    color: #1c1c1c;
+    font-size: 60px;
+    font-family: 'Gilda Display', serif;
+    max-width: 700px;
+    line-height: 1;
+    margin-top: 14px;
+    margin-bottom: 25px;
+}
+
+.about__text {
+    color: #878787;
+    font-size: 10.5px;
+    line-height: 1.95;
+    margin-bottom: 25px;
+}
+
+.about__images {
+    position: relative;
+}
+
+.about__image {
+    position: absolute;
+}
+
+.about__image--img1 {
+    z-index: 3;
+    left: 250px;
+    top: 15px;
+}
+
+.about__image--img2 {
+    z-index: 2;
+    top: 170px;
+    left: -45px;
+}
+
+.about__image--img3 {
+    z-index: 1;
+    top: -30px;
+    left: 0;
+}
+
+
+/* rooms */
+
+.rooms {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.rooms__header {
+    text-align: center;
+}
+
+.rooms__subtitle {
+    font-family: 'Gilda Display', serif;
+    line-height: 1;
+    color: #1c1c1c;
+    font-size: 42px;
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+.rooms__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    justify-content: space-between;
+    width: 875px;
+    margin: 0 auto;
+}
+
+.rooms__item {}
+
+.rooms__item--1big {
+    width: 428px;
+    display: grid;
+    background-color: thistle;
+}
+
+.big-room {
+    background-color: white;
+    display: grid;
+    grid-template-rows: max-content;
+}
+
+.big-room__header {
+    background-image: url(../images/index/adriatic.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 184px;
+}
+
+.big-room__title {
+    text-transform: uppercase;
+    font-size: 11px;
+    color: white;
+    margin-top: 158px;
+    margin-left: 22px;
+}
+
+.big-room-description {
+    padding: 27px 23px;
+}
+
+.big-room-description__title {
+    color: black;
+    font-family: 'Gilda Display', serif;
+    line-height: 0.8;
+    font-size: 23px;
+}
+
+.big-room-description__items {
+    display: flex;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.big-room-description__item {
+    font-size: 10px;
+    line-height: 2.28;
+    color: #878787;
+    text-transform: uppercase;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 25px;
+    margin-right: 10px;
+    height: 19px;
+}
+
+.big-room-description__text {
+    line-height: 2;
+    color: #878787;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.rooms__item--4small {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.room {
+    width: 203px;
+    height: 184px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-top: 158px;
+    padding-left: 22px;
+}
+
+.room--atelier {
+    background-image: url(../images/index/atelier.png);
+}
+
+.room--piazza {
+    background-image: url(../images/index/piazza.png);
+}
+
+.room--gallery {
+    background-image: url(../images/index/gallery.png);
+}
+
+.room--grand-piazza-suite {
+    background-image: url(../images/index/grand-piazza.png);
+}
+
+.room__title {
+    text-transform: uppercase;
+    font-size: 11px;
+    color: white;
+}
+
+
+/* check-all */
+
+.check-all {
+    width: 100%;
+    background-color: #1c1c1c;
+}
+
+.check-all__wrapper {
+    /* height: 484px; */
+    /* background-color: white; */
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.check-all__images {
+    flex: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.check-all__image {
+    /* width: 360px;
+    height: 246px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.check-all__image-1 {
+    background-image: url(../images/index/check-all-1.png);
+}
+
+.check-all__image-2 {
+    background-image: url(../images/index/check-all-2.png);
+}
+
+.check-all__image-3 {
+    background-image: url(../images/index/check-all-3.png);
+}
+
+.check-all__image-4 {
+    background-image: url(../images/index/check-all-4.png);
+}
+
+.check-all__info {
+    flex: 50%;
+    padding: 65px 75px;
+}
+
+.check-all__subtitle {
+    font-size: 60px;
+    font-family: 'Gilda Display', serif;
+    max-width: 700px;
+    line-height: 1;
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 46px;
+    width: 60%;
+}
+
+.check-all__subtitle span {
+    color: #c19b76;
+}
+
+.check-all__text {
+    margin: 28px auto 50px;
+}
+
+.check-all__paragraph {
+    color: #878787;
+    line-height: 2;
+}
+
+
+/* text-info */
+
+.info {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.info__wrapper {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.info__paragraph {
+    font-family: 'Gilda Display', serif;
+    color: #1c1c1c;
+    font-size: 19px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+
+/* media */
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .check-form {
+        margin-top: 80px;
+        height: 83px;
+    }
+    .form__item-check {
+        grid-template-areas: "label""input""month";
+        justify-content: center;
+    }
+    .form__select {
+        height: initial;
+        margin-top: 0;
+    }
+    .form__button {
+        padding-top: 30px;
+    }
+    .form__item:not(.form__item-button) {
+        margin-top: 10px;
+    }
+    .about {
+        padding-top: 130px;
+        height: 450px;
+    }
+    .about__info {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .about__subtitle {
+        font-size: 43px;
+    }
+    .about__image--img1 {
+        width: 179px;
+        height: 242px;
+        left: 175px;
+    }
+    .about__image--img2 {
+        width: 245px;
+        height: 164px;
+        top: 120px;
+    }
+    .about__image--img3 {
+        width: 232px;
+        height: 155px;
+        top: 0px;
+        left: -20px;
+    }
+    .check-all__wrapper {
+        width: 100%;
+    }
+    .check-all__subtitle {
+        font-size: 43px;
+        margin-bottom: 0;
+    }
+    .check-all__info {
+        padding: 51px 45px;
+    }
+    .check-all__text {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .check-all__paragraph {
+        font-size: 9px;
+    }
+    .info__paragraph {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    hr {
+        display: none;
+    }
+    .check-form {
+        width: 526px;
+        margin-top: 55px;
+    }
+    .form {
+        flex-wrap: wrap;
+    }
+    .form__item-check {
+        grid-template-areas: "label""input""month";
+    }
+    .form__item-check {
+        justify-content: center;
+    }
+    .form__select {
+        height: 21px;
+        margin-top: 3px;
+        margin-bottom: 7px;
+    }
+    .form__item-button {
+        flex: 100%;
+        height: 76px;
+    }
+    .form__button {
+        padding-top: 0;
+        line-height: 76px;
+        font-size: 22px;
+    }
+    .about {
+        padding-top: 245px;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 265px;
+    }
+    .title--gray {
+        font-size: 18px;
+    }
+    .about__subtitle {
+        font-size: 36px;
+    }
+    .about__info {
+        width: 100%;
+    }
+    .about__image--img1 {
+        width: 213px;
+        height: 286px;
+        top: 6px;
+        left: initial;
+        right: 0;
+    }
+    .about__image--img2 {
+        width: 298px;
+        height: 198px;
+        top: 67px;
+        left: 0;
+    }
+    .about__image--img3 {
+        width: 280px;
+        height: 187px;
+        top: 122px;
+        left: 33%;
+    }
+    .rooms {
+        padding-top: 42px;
+    }
+    .big-room-description {
+        display: none;
+    }
+    .rooms__items {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        width: 100%;
+        justify-items: center;
+    }
+    .room {
+        width: 428px;
+    }
+    .rooms__item--4small {
+        grid-template-columns: 1fr;
+    }
+    .room--gallery {
+        display: none;
+    }
+    .room--grand-piazza-suite {
+        display: none;
+    }
+    .check-all__wrapper {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .check-all__images {
+        flex: 100%;
+        height: 105px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .check-all .title--white {
+        font-size: 18px;
+    }
+    .check-all__subtitle {
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+    .check-all__info {
+        flex: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 35px 95px;
+    }
+    .check-all__text {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .info__wrapper {
+        width: 100%;
+    }
+    .info__paragraph {
+        font-size: 16px;
+    }
+}

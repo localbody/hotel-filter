@@ -1,0 +1,243 @@
+@import "header.css";
+@import "nav.css";
+@import "top.css";
+@import "footer.css";
+@import "buttons.css";
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    outline: none;
+}
+
+
+/* close commented backslash hack */
+
+input,
+select {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.mt--10 {
+    margin-top: 10px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.my-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.my-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.pl-0 {
+    padding-left: 0 !important;
+}
+
+.pl-none {
+    padding-left: 0 !important;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-divider {
+    width: 24px;
+    height: 2px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small-divider--gray {
+    background-color: #878787;
+}
+
+.small-divider--white {
+    background-color: white;
+}
+
+.title {
+    font-size: 10.5px;
+    letter-spacing: 1.16px;
+    text-transform: uppercase;
+}
+
+.title--white {
+    color: white;
+}
+
+.title--gray {
+    color: #878787;
+}
+
+.icon-plan {
+    background-image: url(../images/icons/plan.svg);
+}
+
+.icon-user {
+    background-image: url(../images/icons/user.svg);
+}
+
+.bg-reviews {
+    width: 21px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-right: 3px;
+    display: inline-block;
+}
+
+.bg--adriatic-suite {
+    /*  */
+    background-image: url(../images/rooms/adriatic-suite.jpg);
+}
+
+.bg--top--atelier {
+    /*  */
+    background-image: url(../images/rooms/atelier.jpg);
+}
+
+.bg--top--gallery {
+    /*  */
+    background-image: url(../images/rooms/gallery.jpg);
+}
+
+.bg--top--grand-piazza-suite {
+    /*  */
+    background-image: url(../images/rooms/grand-piazza-suite.jpg);
+}
+
+.icon-guest {
+    background-image: url(../images/icons/user.svg);
+}
+
+.icon-square {
+    background-image: url(../images/icons/plan.svg);
+}
+
+.icon-price {
+    background-image: url(../images/icons/price.svg);
+}
+
+.icon-week-price {
+    background-image: url(../images/icons/week-price.svg);
+}
+
+.icon-television {
+    background-image: url(../images/icons/television.svg);
+}
+
+.icon-no-smoking {
+    background-image: url(../images/icons/no-smoking.svg);
+}
+
+.icon-beach {
+    background-image: url(../images/icons/beach.svg);
+}
+
+.icon-bathroom {
+    background-image: url(../images/icons/bathroom.svg);
+}
+
+.icon-bike {
+    background-image: url(../images/icons/bike.svg);
+}
+
+.icon-breakfast {
+    background-image: url(../images/icons/breakfast.svg);
+}
+
+.icon-drink {
+    background-image: url(../images/icons/drink.svg);
+}
+
+.icon-loundry {
+    background-image: url(../images/icons/loundry.svg);
+}
+
+.icon-beds {
+    background-image: url(../images/icons/beds.svg);
+}
+
+
+/* main */
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    /*  */
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+    margin-left: 350px;
+}
+
+.footer-menu-item {
+    color: white;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {}
+
+@media screen and (max-width: 1023px) {
+    .nav {
+        display: none;
+    }
+
+    .nav--show {
+        display: block;
+    }
+
+    .header__menu-button {
+        display: block;
+        margin-right: 57px;
+        background-image: url(../images/icons/menu.svg);
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .header__menu-button--close {
+        background-image: url(../images/icons/close.svg);
+    }
+
+    .footer {
+        height: 44px;
+        padding-top: 15px;
+    }
+
+    .footer__menu {
+        margin-left: 44px;
+        width: 410px;
+    }
+
+    .footer-menu-item {
+        font-size: 16px;
+    }
+}

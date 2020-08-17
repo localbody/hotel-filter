@@ -1,0 +1,103 @@
+/* top */
+
+.top {
+    /*  */
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top__content {
+    /*  */
+    width: 540px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.top__subtitle {
+    color: white;
+    font-family: 'Gilda Display', serif;
+    font-size: 52.5px;
+    line-height: 1.3;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.top--index {
+    /*  */
+    box-sizing: border-box;
+    height: 640px;
+    background-image: url(../images/bg-home.jpg);
+    background-position: center;
+    padding-top: 125px;
+    text-transform: uppercase;
+}
+
+.top--index::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(28, 28, 28, 0.2), rgba(28, 28, 28, 0.2));
+    width: 100%;
+    height: 640px;
+    top: 55px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .top {
+        height: 260px;
+        padding-top: 40px;
+        /* margin-bottom: 70px; */
+    }
+
+    .top--index {
+        height: 260px;
+        padding-top: 40px;
+    }
+
+    .top--index::before {
+        top: 47px;
+        height: 260px;
+    }
+
+    .top__content {
+        width: 100%;
+    }
+
+    .top__subtitle {
+        margin-bottom: 30px;
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .top {
+        padding-top: 0;
+        height: 200px;
+    }
+
+    .top__subtitle {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .top .title--white {
+        display: none;
+    }
+
+    .top--index {
+        padding-top: 0;
+        height: 200px;
+        top: 36px
+    }
+
+    .top--index::before {
+        height: 200px;
+        top: 36px
+    }
+}
