@@ -1,0 +1,80 @@
+extends ../layouts/page 
+block variables
+    - var title= "Search"
+include ../mixins/services__item
+include ../mixins/room_detail
+block content
+    main.main
+        section.top.top--rooms
+            h1.top__subtitle.top__subtitle--rooms SEARCH
+        section.content
+            .filter
+                form.form
+                    .form-item.date-guests
+                        h2.filter__title.filter__title--white All Branches
+                        .filter__items
+                            .filter__item.filter__item--date
+                                span.filter__label CHECK-IN
+                                input.filter__input.filter__input--date(value="23")
+                                select.filter__month
+                                    each item, index in ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+                                        option(value= index+1)= item
+
+                            .filter__item.filter__item--date
+                                span.filter__label CHECK-OUT
+                                input.filter__input.filter__input--date(value="23")
+                                select.filter__month
+                                    each item, index in ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+                                        option(value= index+1)= item
+
+                            .filter__item.filter__item--count
+                                span.filter__label GUEST
+                                input.filter__input.filter__input--count(value="2")
+
+                            .filter__item.filter__item--count
+                                span.filter__label NIGHTS
+                                input.filter__input.filter__input--count(value="9")
+                    hr
+
+                    .form-item.services
+                        h2.filter__title.filter__title--black Services
+
+                        ul.services__items
+                            +services__item("Animal Allowed")
+                            +services__item("Swimming Pool")
+                            +services__item("Smooking Room")
+                            +services__item("Wifi 24 H")
+                            +services__item("Sea View")
+                            +services__item("Breakfast Included")
+
+                    hr.mb-30
+
+                    .form-item.room-size
+                        h2.filter__title.filter__title--black
+                            |Room Size
+                        input.filter__square.filter__square--start(placeholder="0")
+                        span.input-dummy
+                            |-
+                        input.filter__square.filter__square--end(placeholder="0")
+                        span.input-dummy
+                            |M<sup>2</sup>
+
+                    hr.mb-40
+
+                    .form-item.reviews.filter__title--black
+                        h2.filter__title
+                            |Reviews
+                        ul.reviews__items
+                            each item in ["0.0", "2.0", "4.0", "6.0", "8.0", "10"]
+                                li.reviews__item= item
+                        
+                    hr
+
+            h2.rooms__title.my-20
+                |List
+
+            .rooms
+                +room_detail("bg--top--atelier", "Adriatic Suite", "Adriatic Suite", "7.5", "5", "3", "57", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300")
+                +room_detail("bg--top--gallery", "Adriatic Suite", "Adriatic Suite", "7.5", "5", "3", "57", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300")
+                +room_detail("bg--top--grand-piazza-suite", "Adriatic Suite", "Adriatic Suite", "7.5", "5", "3", "57", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300")
+                +room_detail("bg--top--atelier", "Adriatic Suite", "Adriatic Suite", "7.5", "5", "3", "57", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300")

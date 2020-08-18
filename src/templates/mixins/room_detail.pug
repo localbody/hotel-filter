@@ -1,0 +1,22 @@
+mixin room_detail(bg, roomName, roomTitle, rating, reviews, guests, square, detailAbout, price)
+    .room-detail.room-detail--small
+        .room-detail-img(class= bg)
+            p.room-detail__room-name= roomName
+        .room-detail__room-wrapper
+            h3.room-detail__room-title
+                = roomTitle
+            ul.room-detail-items
+                li.room-detail-item.pl-none
+                    span.bg-reviews
+                        = rating
+                    = reviews + " reviews"
+                li.room-detail-item.icon-guest
+                    = guests + " guests"
+                li.room-detail-item.icon-square
+                    = square + " М" 
+                    sup 2
+            p.room-detail-about
+                = detailAbout
+            a.button.button--white-toupe(href="")
+                |BOOK NOW FROM
+                = " " + price + "$"
