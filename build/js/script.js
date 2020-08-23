@@ -28,17 +28,10 @@ function showAllBtn() {
     }
 }
 
-function applyFilters(minReviews, filterServices) {
-    for(let i=0; i<btnsFilter.length; i++) {
-
-    }
-}
-
 // вешаем сброс фильтра и делаем SHOW ALL
 btnShowAll.addEventListener("click", function () {
     filterServices = []
     minReviews = 0
-    
     removeActiveReviews()
     unckeckServices()
     btnShowAll.classList.remove("show")
@@ -65,10 +58,8 @@ function checkRooms() {
         let room = rooms[i]
         // скрыта ли уже комната ?
         let isHideRoom = (room.className.indexOf("hide") > -1)
-
         // результат проверки
         let checkResult = checkRoom(room)
-
         if (!isHideRoom && !checkResult) {
             // скроем комнату
             rooms[i].classList.add("hide")
@@ -81,7 +72,6 @@ function checkRooms() {
 
 for (let i=0; i<btnsReviews.length; i++) {
     btnsReviews[i].addEventListener("click", function() {
-
         // если кликнули НЕ активный фильтр
         if (this.className.indexOf("active") == -1) {
             minReviews =parseInt(this.innerText)
@@ -93,7 +83,6 @@ for (let i=0; i<btnsReviews.length; i++) {
             showAllBtn()
             checkRooms()
         }
-
     })
 }
 
