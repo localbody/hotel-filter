@@ -1,7 +1,7 @@
-mixin services__item(label)
+mixin services__item(label, paramFilter)
     li.services__item.check
         label.services__label
-            input.check__input(type="checkbox")
+            input.check__input(type="checkbox", class="btn-filter", data-filter= paramFilter)
             <svg class="check__box" viewBox="0 0 10 10">
                 <rect class="check__square" width="10" height="10" />
                 <rect class="check__mark" x="3" y="3" width="4" height="4" />

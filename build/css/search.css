@@ -69,7 +69,7 @@ hr {
 .filter__title {
     font-family: 'Gilda Display', serif;
     font-size: 15px;
-    /* line-height: 1.37; */
+    line-height: 1.37;
     letter-spacing: -0.6px;
     margin-bottom: 15px;
 }
@@ -212,6 +212,7 @@ hr {
 }
 
 .reviews__item {
+    cursor: pointer;
     width: 30px;
     height: 25px;
     background-color: #1c1c1c;
@@ -224,10 +225,18 @@ hr {
     transition: all 0.25s;
 }
 
+.reviews__item.active,
 .reviews__item:hover {
     background-color: #c19b76;
 }
 
+.btn-showall {
+    display: none;
+}
+
+.btn-showall.show{
+    display: inline-block;
+}
 
 /* .filter end */
 
@@ -253,6 +262,10 @@ hr {
     line-height: 0.8;
     color: #000;
     font-size: 22.5px;
+}
+
+.room-detail.hide {
+    display: none;
 }
 
 .room-detail--big {

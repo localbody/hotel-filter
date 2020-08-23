@@ -104,7 +104,7 @@
               <ul class="services__items">
                 <li class="services__item check">
                   <label class="services__label">
-                    <input class="check__input" type="checkbox"/><svg class="check__box" viewBox="0 0 10 10">
+                    <input class="check__input btn-filter" type="checkbox" data-filter="animalAllowed"/><svg class="check__box" viewBox="0 0 10 10">
 <rect class="check__square" width="10" height="10" />
 <rect class="check__mark" x="3" y="3" width="4" height="4" />
 </svg>Animal Allowed
@@ -112,7 +112,7 @@
                 </li>
                 <li class="services__item check">
                   <label class="services__label">
-                    <input class="check__input" type="checkbox"/><svg class="check__box" viewBox="0 0 10 10">
+                    <input class="check__input btn-filter" type="checkbox" data-filter="swimmingPool"/><svg class="check__box" viewBox="0 0 10 10">
 <rect class="check__square" width="10" height="10" />
 <rect class="check__mark" x="3" y="3" width="4" height="4" />
 </svg>Swimming Pool
@@ -120,7 +120,7 @@
                 </li>
                 <li class="services__item check">
                   <label class="services__label">
-                    <input class="check__input" type="checkbox"/><svg class="check__box" viewBox="0 0 10 10">
+                    <input class="check__input btn-filter" type="checkbox" data-filter="smookingRoom"/><svg class="check__box" viewBox="0 0 10 10">
 <rect class="check__square" width="10" height="10" />
 <rect class="check__mark" x="3" y="3" width="4" height="4" />
 </svg>Smooking Room
@@ -128,7 +128,7 @@
                 </li>
                 <li class="services__item check">
                   <label class="services__label">
-                    <input class="check__input" type="checkbox"/><svg class="check__box" viewBox="0 0 10 10">
+                    <input class="check__input btn-filter" type="checkbox" data-filter="wifi24H"/><svg class="check__box" viewBox="0 0 10 10">
 <rect class="check__square" width="10" height="10" />
 <rect class="check__mark" x="3" y="3" width="4" height="4" />
 </svg>Wifi 24 H
@@ -136,7 +136,7 @@
                 </li>
                 <li class="services__item check">
                   <label class="services__label">
-                    <input class="check__input" type="checkbox"/><svg class="check__box" viewBox="0 0 10 10">
+                    <input class="check__input btn-filter" type="checkbox" data-filter="seaView"/><svg class="check__box" viewBox="0 0 10 10">
 <rect class="check__square" width="10" height="10" />
 <rect class="check__mark" x="3" y="3" width="4" height="4" />
 </svg>Sea View
@@ -144,7 +144,7 @@
                 </li>
                 <li class="services__item check">
                   <label class="services__label">
-                    <input class="check__input" type="checkbox"/><svg class="check__box" viewBox="0 0 10 10">
+                    <input class="check__input btn-filter" type="checkbox" data-filter="breakfastIncluded"/><svg class="check__box" viewBox="0 0 10 10">
 <rect class="check__square" width="10" height="10" />
 <rect class="check__mark" x="3" y="3" width="4" height="4" />
 </svg>Breakfast Included
@@ -170,12 +170,12 @@
                 <li class="reviews__item">10</li>
               </ul>
             </div>
-            <hr/>
+            <hr/><a class="button button--toupe-border-white btn-showall">Show all</a>
           </form>
         </div>
         <h2 class="rooms__title my-20">List</h2>
         <div class="rooms">
-          <div class="room-detail room-detail--small">
+          <div class="room-detail room-detail--small" data-reviews="1" data-services="animalAllowed,swimmingPool">
             <div class="room-detail-img bg--top--atelier">
               <p class="room-detail__room-name">Adriatic Suite</p>
             </div>
@@ -183,7 +183,7 @@
               <h3 class="room-detail__room-title">Adriatic Suite
               </h3>
               <ul class="room-detail-items">
-                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>5 reviews
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>1 reviews
                 </li>
                 <li class="room-detail-item icon-guest">3 guests
                 </li>
@@ -194,7 +194,7 @@
               </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
             </div>
           </div>
-          <div class="room-detail room-detail--small">
+          <div class="room-detail room-detail--small" data-reviews="2" data-services="animalAllowed,swimmingPool,smookingRoom">
             <div class="room-detail-img bg--top--gallery">
               <p class="room-detail__room-name">Adriatic Suite</p>
             </div>
@@ -202,7 +202,7 @@
               <h3 class="room-detail__room-title">Adriatic Suite
               </h3>
               <ul class="room-detail-items">
-                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>5 reviews
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>2 reviews
                 </li>
                 <li class="room-detail-item icon-guest">3 guests
                 </li>
@@ -213,7 +213,7 @@
               </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
             </div>
           </div>
-          <div class="room-detail room-detail--small">
+          <div class="room-detail room-detail--small" data-reviews="5" data-services="swimmingPool">
             <div class="room-detail-img bg--top--grand-piazza-suite">
               <p class="room-detail__room-name">Adriatic Suite</p>
             </div>
@@ -232,7 +232,7 @@
               </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
             </div>
           </div>
-          <div class="room-detail room-detail--small">
+          <div class="room-detail room-detail--small" data-reviews="4" data-services="animalAllowed">
             <div class="room-detail-img bg--top--atelier">
               <p class="room-detail__room-name">Adriatic Suite</p>
             </div>
@@ -240,7 +240,178 @@
               <h3 class="room-detail__room-title">Adriatic Suite
               </h3>
               <ul class="room-detail-items">
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>4 reviews
+                </li>
+                <li class="room-detail-item icon-guest">3 guests
+                </li>
+                <li class="room-detail-item icon-square">57 М<sup>2</sup>
+                </li>
+              </ul>
+              <p class="room-detail-about">Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.
+              </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
+            </div>
+          </div>
+          <div class="room-detail room-detail--small" data-reviews="15" data-services="smookingRoom,wifi24H">
+            <div class="room-detail-img bg--top--atelier">
+              <p class="room-detail__room-name">Adriatic Suite</p>
+            </div>
+            <div class="room-detail__room-wrapper">
+              <h3 class="room-detail__room-title">Adriatic Suite
+              </h3>
+              <ul class="room-detail-items">
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>15 reviews
+                </li>
+                <li class="room-detail-item icon-guest">3 guests
+                </li>
+                <li class="room-detail-item icon-square">57 М<sup>2</sup>
+                </li>
+              </ul>
+              <p class="room-detail-about">Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.
+              </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
+            </div>
+          </div>
+          <div class="room-detail room-detail--small" data-reviews="9" data-services="smookingRoom">
+            <div class="room-detail-img bg--top--gallery">
+              <p class="room-detail__room-name">Adriatic Suite</p>
+            </div>
+            <div class="room-detail__room-wrapper">
+              <h3 class="room-detail__room-title">Adriatic Suite
+              </h3>
+              <ul class="room-detail-items">
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>9 reviews
+                </li>
+                <li class="room-detail-item icon-guest">3 guests
+                </li>
+                <li class="room-detail-item icon-square">57 М<sup>2</sup>
+                </li>
+              </ul>
+              <p class="room-detail-about">Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.
+              </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
+            </div>
+          </div>
+          <div class="room-detail room-detail--small" data-reviews="5" data-services="wifi24H">
+            <div class="room-detail-img bg--top--grand-piazza-suite">
+              <p class="room-detail__room-name">Adriatic Suite</p>
+            </div>
+            <div class="room-detail__room-wrapper">
+              <h3 class="room-detail__room-title">Adriatic Suite
+              </h3>
+              <ul class="room-detail-items">
                 <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>5 reviews
+                </li>
+                <li class="room-detail-item icon-guest">3 guests
+                </li>
+                <li class="room-detail-item icon-square">57 М<sup>2</sup>
+                </li>
+              </ul>
+              <p class="room-detail-about">Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.
+              </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
+            </div>
+          </div>
+          <div class="room-detail room-detail--small" data-reviews="6" data-services="breakfastIncluded,wifi24H">
+            <div class="room-detail-img bg--top--atelier">
+              <p class="room-detail__room-name">Adriatic Suite</p>
+            </div>
+            <div class="room-detail__room-wrapper">
+              <h3 class="room-detail__room-title">Adriatic Suite
+              </h3>
+              <ul class="room-detail-items">
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>6 reviews
+                </li>
+                <li class="room-detail-item icon-guest">3 guests
+                </li>
+                <li class="room-detail-item icon-square">57 М<sup>2</sup>
+                </li>
+              </ul>
+              <p class="room-detail-about">Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.
+              </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
+            </div>
+          </div>
+          <div class="room-detail room-detail--small" data-reviews="3" data-services="breakfastIncluded,seaView,smookingRoom,wifi24H">
+            <div class="room-detail-img bg--top--gallery">
+              <p class="room-detail__room-name">Adriatic Suite</p>
+            </div>
+            <div class="room-detail__room-wrapper">
+              <h3 class="room-detail__room-title">Adriatic Suite
+              </h3>
+              <ul class="room-detail-items">
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>3 reviews
+                </li>
+                <li class="room-detail-item icon-guest">3 guests
+                </li>
+                <li class="room-detail-item icon-square">57 М<sup>2</sup>
+                </li>
+              </ul>
+              <p class="room-detail-about">Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.
+              </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
+            </div>
+          </div>
+          <div class="room-detail room-detail--small" data-reviews="5" data-services="seaView">
+            <div class="room-detail-img bg--top--grand-piazza-suite">
+              <p class="room-detail__room-name">Adriatic Suite</p>
+            </div>
+            <div class="room-detail__room-wrapper">
+              <h3 class="room-detail__room-title">Adriatic Suite
+              </h3>
+              <ul class="room-detail-items">
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>5 reviews
+                </li>
+                <li class="room-detail-item icon-guest">3 guests
+                </li>
+                <li class="room-detail-item icon-square">57 М<sup>2</sup>
+                </li>
+              </ul>
+              <p class="room-detail-about">Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.
+              </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
+            </div>
+          </div>
+          <div class="room-detail room-detail--small" data-reviews="4" data-services="breakfastIncluded">
+            <div class="room-detail-img bg--top--atelier">
+              <p class="room-detail__room-name">Adriatic Suite</p>
+            </div>
+            <div class="room-detail__room-wrapper">
+              <h3 class="room-detail__room-title">Adriatic Suite
+              </h3>
+              <ul class="room-detail-items">
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>4 reviews
+                </li>
+                <li class="room-detail-item icon-guest">3 guests
+                </li>
+                <li class="room-detail-item icon-square">57 М<sup>2</sup>
+                </li>
+              </ul>
+              <p class="room-detail-about">Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.
+              </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
+            </div>
+          </div>
+          <div class="room-detail room-detail--small" data-reviews="10" data-services="breakfastIncluded,seaView">
+            <div class="room-detail-img bg--top--atelier">
+              <p class="room-detail__room-name">Adriatic Suite</p>
+            </div>
+            <div class="room-detail__room-wrapper">
+              <h3 class="room-detail__room-title">Adriatic Suite
+              </h3>
+              <ul class="room-detail-items">
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>10 reviews
+                </li>
+                <li class="room-detail-item icon-guest">3 guests
+                </li>
+                <li class="room-detail-item icon-square">57 М<sup>2</sup>
+                </li>
+              </ul>
+              <p class="room-detail-about">Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.
+              </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
+            </div>
+          </div>
+          <div class="room-detail room-detail--small" data-reviews="7" data-services="">
+            <div class="room-detail-img bg--top--gallery">
+              <p class="room-detail__room-name">Adriatic Suite</p>
+            </div>
+            <div class="room-detail__room-wrapper">
+              <h3 class="room-detail__room-title">Adriatic Suite
+              </h3>
+              <ul class="room-detail-items">
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>7 reviews
                 </li>
                 <li class="room-detail-item icon-guest">3 guests
                 </li>
