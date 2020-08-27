@@ -234,7 +234,7 @@ hr {
     display: none;
 }
 
-.btn-showall.show{
+.btn-showall.show {
     display: inline-block;
 }
 
@@ -249,6 +249,7 @@ hr {
     padding-left: 22px;
     column-gap: 20px;
     row-gap: 28px;
+    min-width: 580px;
 }
 
 .room__description {
@@ -610,6 +611,7 @@ hr {
 
     .rooms {
         grid-template-columns: 1fr;
+        min-width: 100%;
     }
 
     .room-detail--small {

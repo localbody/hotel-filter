@@ -1,5 +1,5 @@
 mixin room_detail(bg, roomName, roomTitle, rating, reviews, guests, square, detailAbout, price, services)
-    .room-detail.room-detail--small(data-reviews= reviews, data-services= services)
+    .room-detail.room-detail--small(data-reviews= reviews, data-services= services, data-square= square)
         .room-detail-img(class= bg)
             p.room-detail__room-name= roomName
         .room-detail__room-wrapper
@@ -16,7 +16,8 @@ mixin room_detail(bg, roomName, roomTitle, rating, reviews, guests, square, deta
                     = square + " М" 
                     sup 2
             p.room-detail-about
-                = detailAbout
+                //- = detailAbout
+                = services
             a.button.button--white-toupe(href="")
                 |BOOK NOW FROM
                 = " " + price + "$"
