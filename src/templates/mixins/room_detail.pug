@@ -1,5 +1,5 @@
 mixin room_detail(bg, roomName, roomTitle, rating, reviews, guests, square, detailAbout, price, services)
-    .room-detail.room-detail--small(data-reviews= reviews, data-services= services, data-square= square)
+    .room-detail.room-detail--small.mix(class= reviews, class= services, data-square= square)
         .room-detail-img(class= bg)
             p.room-detail__room-name= roomName
         .room-detail__room-wrapper

@@ -4,11 +4,11 @@ block variables
 include ../mixins/services__item
 include ../mixins/room_detail
 block content
-    main.main
+    main.main.cd-main-content
         section.top.top--rooms
             h1.top__subtitle.top__subtitle--rooms SEARCH
         section.content
-            .filter
+            .filter.cd-filter
                 form.form
                     .form-item.date-guests
                         h2.filter__title.filter__title--white All Branches
@@ -36,16 +36,16 @@ block content
                                 input.filter__input.filter__input--count(value="9")
                     hr
 
-                    .form-item.services
+                    .form-item.services.cd-filter-block
                         h2.filter__title.filter__title--black Services
 
-                        ul.services__items
-                            +services__item("Animal Allowed", "animalAllowed")
-                            +services__item("Swimming Pool", "swimmingPool")
-                            +services__item("Smooking Room", "smookingRoom")
-                            +services__item("Wifi 24 H", "wifi24H")
-                            +services__item("Sea View", "seaView")
-                            +services__item("Breakfast Included", "breakfastIncluded")
+                        ul.services__items.cd-filter-content.cd-filters.list
+                            +services__item("Animal Allowed", ".animal-allowed")
+                            +services__item("Swimming Pool", ".swimming-pool")
+                            +services__item("Smooking Room", ".smooking-room")
+                            +services__item("Wifi 24 H", ".wifi24h")
+                            +services__item("Sea View", ".sea-view")
+                            +services__item("Breakfast Included", ".breakfast-included")
 
                     hr.mb-30
 
@@ -74,17 +74,17 @@ block content
             h2.rooms__title.my-20
                 |List
 
-            .rooms
-                +room_detail("bg--top--atelier", "Adriatic Suite", "Adriatic Suite", "7.5", "1", "3", "10", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "animalAllowed,swimmingPool")
-                +room_detail("bg--top--gallery", "Adriatic Suite", "Adriatic Suite", "7.5", "2", "3", "20", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "animalAllowed,swimmingPool,smookingRoom")
-                +room_detail("bg--top--grand-piazza-suite", "Adriatic Suite", "Adriatic Suite", "7.5", "3", "3", "30", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "swimmingPool")
-                +room_detail("bg--top--atelier", "Adriatic Suite", "Adriatic Suite", "7.5", "4", "3", "40", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "animalAllowed")
-                +room_detail("bg--top--atelier", "Adriatic Suite", "Adriatic Suite", "7.5", "15", "3", "50", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "smookingRoom,wifi24H")
-                +room_detail("bg--top--gallery", "Adriatic Suite", "Adriatic Suite", "7.5", "9", "3", "11", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "smookingRoom")
-                +room_detail("bg--top--grand-piazza-suite", "Adriatic Suite", "Adriatic Suite", "7.5", "22", "3", "57", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "wifi24H")
-                +room_detail("bg--top--atelier", "Adriatic Suite", "Adriatic Suite", "7.5", "6", "3", "33", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "breakfastIncluded,wifi24H")
-                +room_detail("bg--top--gallery", "Adriatic Suite", "Adriatic Suite", "7.5", "3", "3", "44", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "breakfastIncluded,seaView,smookingRoom,wifi24H")
-                +room_detail("bg--top--grand-piazza-suite", "Adriatic Suite", "Adriatic Suite", "7.5", "55", "3", "157", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "seaView")
-                +room_detail("bg--top--atelier", "Adriatic Suite", "Adriatic Suite", "7.5", "4", "3", "100", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "breakfastIncluded")
-                +room_detail("bg--top--atelier", "Adriatic Suite", "Adriatic Suite", "7.5", "10", "3", "101", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "breakfastIncluded,seaView")
-                +room_detail("bg--top--gallery", "Adriatic Suite", "Adriatic Suite", "7.5", "7", "3", "110", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "")
+            .rooms.cd-gallery
+                +room_detail("bg--top--atelier", "Adriatic Suite", "Adriatic Suite", "7.5", "reviews-1", "3", "10", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "animal-allowed swimming-pool")
+                +room_detail("bg--top--gallery", "Adriatic Suite", "Adriatic Suite", "7.5", "reviews-2", "3", "20", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "animal-allowed swimming-pool smooking-room")
+                +room_detail("bg--top--grand-piazza-suite", "Adriatic Suite", "Adriatic Suite", "7.5", "reviews-3", "3", "30", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "swimming-pool")
+                +room_detail("bg--top--atelier", "Adriatic Suite", "Adriatic Suite", "7.5", "reviews-4", "3", "40", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "animal-allowed")
+                +room_detail("bg--top--atelier", "Adriatic Suite", "Adriatic Suite", "7.5", "reviews-15", "3", "50", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "smooking-room wifi24h")
+                +room_detail("bg--top--gallery", "Adriatic Suite", "Adriatic Suite", "7.5", "reviews-9", "3", "11", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "smooking-room")
+                +room_detail("bg--top--grand-piazza-suite", "Adriatic Suite", "Adriatic Suite", "7.5", "reviews-22", "3", "57", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "wifi24h")
+                +room_detail("bg--top--atelier", "Adriatic Suite", "Adriatic Suite", "7.5", "reviews-6", "3", "33", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "breakfast-included wifi24h")
+                +room_detail("bg--top--gallery", "Adriatic Suite", "Adriatic Suite", "7.5", "reviews-3", "3", "44", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "breakfast-included sea-view smooking-room wifi24h")
+                +room_detail("bg--top--grand-piazza-suite", "Adriatic Suite", "Adriatic Suite", "7.5", "reviews-55", "3", "157", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "sea-view")
+                +room_detail("bg--top--atelier", "Adriatic Suite", "Adriatic Suite", "7.5", "reviews-4", "3", "100", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "breakfast-included")
+                +room_detail("bg--top--atelier", "Adriatic Suite", "Adriatic Suite", "7.5", "reviews-10", "3", "101", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "breakfast-included sea-view")
+                +room_detail("bg--top--gallery", "Adriatic Suite", "Adriatic Suite", "7.5", "reviews-7", "3", "110", "Offering 2 balconies and views of Rovinj's Main Square and the lively waterfront.", "300", "")

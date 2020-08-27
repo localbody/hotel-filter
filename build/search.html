@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda+Display&amp;amp;family=Roboto:wght@400;900&amp;amp;display=swap"/>
     <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="./css/main.css"/>
     <link rel="stylesheet" href="./css/search.css"/>
     <title>Search</title>
@@ -46,12 +47,13 @@
 </div>
 </div>
 </header>
-    <main class="main">
+    <main class="main cd-main-content">
       <section class="top top--rooms">
         <h1 class="top__subtitle top__subtitle--rooms">SEARCH</h1>
       </section>
       <section class="content">
-        <div class="filter">
+
+        <div class="filter cd-filter">
           <form class="form">
             <div class="form-item date-guests">
               <h2 class="filter__title filter__title--white">All Branches</h2>
@@ -99,12 +101,12 @@
               </div>
             </div>
             <hr/>
-            <div class="form-item services">
+            <div class="form-item services cd-filter-block">
               <h2 class="filter__title filter__title--black">Services</h2>
-              <ul class="services__items">
+              <ul class="services__items cd-filter-content cd-filters list">
                 <li class="services__item check">
                   <label class="services__label">
-                    <input class="check__input btn-filter" type="checkbox" data-filter="animalAllowed"/><svg class="check__box" viewBox="0 0 10 10">
+                    <input class="check__input btn-filter filter" type="checkbox" data-filter=".animal-allowed"/><svg class="check__box" viewBox="0 0 10 10">
 <rect class="check__square" width="10" height="10" />
 <rect class="check__mark" x="3" y="3" width="4" height="4" />
 </svg>Animal Allowed
@@ -112,7 +114,7 @@
                 </li>
                 <li class="services__item check">
                   <label class="services__label">
-                    <input class="check__input btn-filter" type="checkbox" data-filter="swimmingPool"/><svg class="check__box" viewBox="0 0 10 10">
+                    <input class="check__input btn-filter filter" type="checkbox" data-filter=".swimming-pool"/><svg class="check__box" viewBox="0 0 10 10">
 <rect class="check__square" width="10" height="10" />
 <rect class="check__mark" x="3" y="3" width="4" height="4" />
 </svg>Swimming Pool
@@ -120,7 +122,7 @@
                 </li>
                 <li class="services__item check">
                   <label class="services__label">
-                    <input class="check__input btn-filter" type="checkbox" data-filter="smookingRoom"/><svg class="check__box" viewBox="0 0 10 10">
+                    <input class="check__input btn-filter filter" type="checkbox" data-filter=".smooking-room"/><svg class="check__box" viewBox="0 0 10 10">
 <rect class="check__square" width="10" height="10" />
 <rect class="check__mark" x="3" y="3" width="4" height="4" />
 </svg>Smooking Room
@@ -128,7 +130,7 @@
                 </li>
                 <li class="services__item check">
                   <label class="services__label">
-                    <input class="check__input btn-filter" type="checkbox" data-filter="wifi24H"/><svg class="check__box" viewBox="0 0 10 10">
+                    <input class="check__input btn-filter filter" type="checkbox" data-filter=".wifi24h"/><svg class="check__box" viewBox="0 0 10 10">
 <rect class="check__square" width="10" height="10" />
 <rect class="check__mark" x="3" y="3" width="4" height="4" />
 </svg>Wifi 24 H
@@ -136,7 +138,7 @@
                 </li>
                 <li class="services__item check">
                   <label class="services__label">
-                    <input class="check__input btn-filter" type="checkbox" data-filter="seaView"/><svg class="check__box" viewBox="0 0 10 10">
+                    <input class="check__input btn-filter filter" type="checkbox" data-filter=".sea-view"/><svg class="check__box" viewBox="0 0 10 10">
 <rect class="check__square" width="10" height="10" />
 <rect class="check__mark" x="3" y="3" width="4" height="4" />
 </svg>Sea View
@@ -144,7 +146,7 @@
                 </li>
                 <li class="services__item check">
                   <label class="services__label">
-                    <input class="check__input btn-filter" type="checkbox" data-filter="breakfastIncluded"/><svg class="check__box" viewBox="0 0 10 10">
+                    <input class="check__input btn-filter filter" type="checkbox" data-filter=".breakfast-included"/><svg class="check__box" viewBox="0 0 10 10">
 <rect class="check__square" width="10" height="10" />
 <rect class="check__mark" x="3" y="3" width="4" height="4" />
 </svg>Breakfast Included
@@ -174,8 +176,8 @@
           </form>
         </div>
         <h2 class="rooms__title my-20">List</h2>
-        <div class="rooms">
-          <div class="room-detail room-detail--small" data-reviews="1" data-services="animalAllowed,swimmingPool" data-square="10">
+        <div class="rooms cd-gallery">
+          <div class="room-detail room-detail--small mix reviews-1 animal-allowed swimming-pool" data-square="10">
             <div class="room-detail-img bg--top--atelier">
               <p class="room-detail__room-name">Adriatic Suite</p>
             </div>
@@ -183,18 +185,18 @@
               <h3 class="room-detail__room-title">Adriatic Suite
               </h3>
               <ul class="room-detail-items">
-                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>1 reviews
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>reviews-1 reviews
                 </li>
                 <li class="room-detail-item icon-guest">3 guests
                 </li>
                 <li class="room-detail-item icon-square">10 М<sup>2</sup>
                 </li>
               </ul>
-              <p class="room-detail-about">animalAllowed,swimmingPool
+              <p class="room-detail-about">animal-allowed swimming-pool
               </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
             </div>
           </div>
-          <div class="room-detail room-detail--small" data-reviews="2" data-services="animalAllowed,swimmingPool,smookingRoom" data-square="20">
+          <div class="room-detail room-detail--small mix reviews-2 animal-allowed swimming-pool smooking-room" data-square="20">
             <div class="room-detail-img bg--top--gallery">
               <p class="room-detail__room-name">Adriatic Suite</p>
             </div>
@@ -202,18 +204,18 @@
               <h3 class="room-detail__room-title">Adriatic Suite
               </h3>
               <ul class="room-detail-items">
-                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>2 reviews
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>reviews-2 reviews
                 </li>
                 <li class="room-detail-item icon-guest">3 guests
                 </li>
                 <li class="room-detail-item icon-square">20 М<sup>2</sup>
                 </li>
               </ul>
-              <p class="room-detail-about">animalAllowed,swimmingPool,smookingRoom
+              <p class="room-detail-about">animal-allowed swimming-pool smooking-room
               </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
             </div>
           </div>
-          <div class="room-detail room-detail--small" data-reviews="3" data-services="swimmingPool" data-square="30">
+          <div class="room-detail room-detail--small mix reviews-3 swimming-pool" data-square="30">
             <div class="room-detail-img bg--top--grand-piazza-suite">
               <p class="room-detail__room-name">Adriatic Suite</p>
             </div>
@@ -221,18 +223,18 @@
               <h3 class="room-detail__room-title">Adriatic Suite
               </h3>
               <ul class="room-detail-items">
-                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>3 reviews
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>reviews-3 reviews
                 </li>
                 <li class="room-detail-item icon-guest">3 guests
                 </li>
                 <li class="room-detail-item icon-square">30 М<sup>2</sup>
                 </li>
               </ul>
-              <p class="room-detail-about">swimmingPool
+              <p class="room-detail-about">swimming-pool
               </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
             </div>
           </div>
-          <div class="room-detail room-detail--small" data-reviews="4" data-services="animalAllowed" data-square="40">
+          <div class="room-detail room-detail--small mix reviews-4 animal-allowed" data-square="40">
             <div class="room-detail-img bg--top--atelier">
               <p class="room-detail__room-name">Adriatic Suite</p>
             </div>
@@ -240,18 +242,18 @@
               <h3 class="room-detail__room-title">Adriatic Suite
               </h3>
               <ul class="room-detail-items">
-                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>4 reviews
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>reviews-4 reviews
                 </li>
                 <li class="room-detail-item icon-guest">3 guests
                 </li>
                 <li class="room-detail-item icon-square">40 М<sup>2</sup>
                 </li>
               </ul>
-              <p class="room-detail-about">animalAllowed
+              <p class="room-detail-about">animal-allowed
               </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
             </div>
           </div>
-          <div class="room-detail room-detail--small" data-reviews="15" data-services="smookingRoom,wifi24H" data-square="50">
+          <div class="room-detail room-detail--small mix reviews-15 smooking-room wifi24h" data-square="50">
             <div class="room-detail-img bg--top--atelier">
               <p class="room-detail__room-name">Adriatic Suite</p>
             </div>
@@ -259,18 +261,18 @@
               <h3 class="room-detail__room-title">Adriatic Suite
               </h3>
               <ul class="room-detail-items">
-                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>15 reviews
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>reviews-15 reviews
                 </li>
                 <li class="room-detail-item icon-guest">3 guests
                 </li>
                 <li class="room-detail-item icon-square">50 М<sup>2</sup>
                 </li>
               </ul>
-              <p class="room-detail-about">smookingRoom,wifi24H
+              <p class="room-detail-about">smooking-room wifi24h
               </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
             </div>
           </div>
-          <div class="room-detail room-detail--small" data-reviews="9" data-services="smookingRoom" data-square="11">
+          <div class="room-detail room-detail--small mix reviews-9 smooking-room" data-square="11">
             <div class="room-detail-img bg--top--gallery">
               <p class="room-detail__room-name">Adriatic Suite</p>
             </div>
@@ -278,18 +280,18 @@
               <h3 class="room-detail__room-title">Adriatic Suite
               </h3>
               <ul class="room-detail-items">
-                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>9 reviews
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>reviews-9 reviews
                 </li>
                 <li class="room-detail-item icon-guest">3 guests
                 </li>
                 <li class="room-detail-item icon-square">11 М<sup>2</sup>
                 </li>
               </ul>
-              <p class="room-detail-about">smookingRoom
+              <p class="room-detail-about">smooking-room
               </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
             </div>
           </div>
-          <div class="room-detail room-detail--small" data-reviews="22" data-services="wifi24H" data-square="57">
+          <div class="room-detail room-detail--small mix reviews-22 wifi24h" data-square="57">
             <div class="room-detail-img bg--top--grand-piazza-suite">
               <p class="room-detail__room-name">Adriatic Suite</p>
             </div>
@@ -297,18 +299,18 @@
               <h3 class="room-detail__room-title">Adriatic Suite
               </h3>
               <ul class="room-detail-items">
-                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>22 reviews
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>reviews-22 reviews
                 </li>
                 <li class="room-detail-item icon-guest">3 guests
                 </li>
                 <li class="room-detail-item icon-square">57 М<sup>2</sup>
                 </li>
               </ul>
-              <p class="room-detail-about">wifi24H
+              <p class="room-detail-about">wifi24h
               </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
             </div>
           </div>
-          <div class="room-detail room-detail--small" data-reviews="6" data-services="breakfastIncluded,wifi24H" data-square="33">
+          <div class="room-detail room-detail--small mix reviews-6 breakfast-included wifi24h" data-square="33">
             <div class="room-detail-img bg--top--atelier">
               <p class="room-detail__room-name">Adriatic Suite</p>
             </div>
@@ -316,18 +318,18 @@
               <h3 class="room-detail__room-title">Adriatic Suite
               </h3>
               <ul class="room-detail-items">
-                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>6 reviews
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>reviews-6 reviews
                 </li>
                 <li class="room-detail-item icon-guest">3 guests
                 </li>
                 <li class="room-detail-item icon-square">33 М<sup>2</sup>
                 </li>
               </ul>
-              <p class="room-detail-about">breakfastIncluded,wifi24H
+              <p class="room-detail-about">breakfast-included wifi24h
               </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
             </div>
           </div>
-          <div class="room-detail room-detail--small" data-reviews="3" data-services="breakfastIncluded,seaView,smookingRoom,wifi24H" data-square="44">
+          <div class="room-detail room-detail--small mix reviews-3 breakfast-included sea-view smooking-room wifi24h" data-square="44">
             <div class="room-detail-img bg--top--gallery">
               <p class="room-detail__room-name">Adriatic Suite</p>
             </div>
@@ -335,18 +337,18 @@
               <h3 class="room-detail__room-title">Adriatic Suite
               </h3>
               <ul class="room-detail-items">
-                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>3 reviews
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>reviews-3 reviews
                 </li>
                 <li class="room-detail-item icon-guest">3 guests
                 </li>
                 <li class="room-detail-item icon-square">44 М<sup>2</sup>
                 </li>
               </ul>
-              <p class="room-detail-about">breakfastIncluded,seaView,smookingRoom,wifi24H
+              <p class="room-detail-about">breakfast-included sea-view smooking-room wifi24h
               </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
             </div>
           </div>
-          <div class="room-detail room-detail--small" data-reviews="55" data-services="seaView" data-square="157">
+          <div class="room-detail room-detail--small mix reviews-55 sea-view" data-square="157">
             <div class="room-detail-img bg--top--grand-piazza-suite">
               <p class="room-detail__room-name">Adriatic Suite</p>
             </div>
@@ -354,18 +356,18 @@
               <h3 class="room-detail__room-title">Adriatic Suite
               </h3>
               <ul class="room-detail-items">
-                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>55 reviews
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>reviews-55 reviews
                 </li>
                 <li class="room-detail-item icon-guest">3 guests
                 </li>
                 <li class="room-detail-item icon-square">157 М<sup>2</sup>
                 </li>
               </ul>
-              <p class="room-detail-about">seaView
+              <p class="room-detail-about">sea-view
               </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
             </div>
           </div>
-          <div class="room-detail room-detail--small" data-reviews="4" data-services="breakfastIncluded" data-square="100">
+          <div class="room-detail room-detail--small mix reviews-4 breakfast-included" data-square="100">
             <div class="room-detail-img bg--top--atelier">
               <p class="room-detail__room-name">Adriatic Suite</p>
             </div>
@@ -373,18 +375,18 @@
               <h3 class="room-detail__room-title">Adriatic Suite
               </h3>
               <ul class="room-detail-items">
-                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>4 reviews
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>reviews-4 reviews
                 </li>
                 <li class="room-detail-item icon-guest">3 guests
                 </li>
                 <li class="room-detail-item icon-square">100 М<sup>2</sup>
                 </li>
               </ul>
-              <p class="room-detail-about">breakfastIncluded
+              <p class="room-detail-about">breakfast-included
               </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
             </div>
           </div>
-          <div class="room-detail room-detail--small" data-reviews="10" data-services="breakfastIncluded,seaView" data-square="101">
+          <div class="room-detail room-detail--small mix reviews-10 breakfast-included sea-view" data-square="101">
             <div class="room-detail-img bg--top--atelier">
               <p class="room-detail__room-name">Adriatic Suite</p>
             </div>
@@ -392,18 +394,18 @@
               <h3 class="room-detail__room-title">Adriatic Suite
               </h3>
               <ul class="room-detail-items">
-                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>10 reviews
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>reviews-10 reviews
                 </li>
                 <li class="room-detail-item icon-guest">3 guests
                 </li>
                 <li class="room-detail-item icon-square">101 М<sup>2</sup>
                 </li>
               </ul>
-              <p class="room-detail-about">breakfastIncluded,seaView
+              <p class="room-detail-about">breakfast-included sea-view
               </p><a class="button button--white-toupe" href="">BOOK NOW FROM 300$</a>
             </div>
           </div>
-          <div class="room-detail room-detail--small" data-reviews="7" data-services="" data-square="110">
+          <div class="room-detail room-detail--small mix reviews-7" data-square="110">
             <div class="room-detail-img bg--top--gallery">
               <p class="room-detail__room-name">Adriatic Suite</p>
             </div>
@@ -411,7 +413,7 @@
               <h3 class="room-detail__room-title">Adriatic Suite
               </h3>
               <ul class="room-detail-items">
-                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>7 reviews
+                <li class="room-detail-item pl-none"><span class="bg-reviews">7.5</span>reviews-7 reviews
                 </li>
                 <li class="room-detail-item icon-guest">3 guests
                 </li>
@@ -424,7 +426,9 @@
           </div>
         </div>
       </section>
-    </main><footer class="footer">
+
+    </main>
+    <footer class="footer">
 <nav class="footer__nav">
 <ul class="footer__menu">
 <li>
@@ -445,7 +449,8 @@
 </ul>
 </nav>
 </footer>
-    <script src="./js/jquery-3.5.1.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/jquery-2.1.1.js"></script>
+    <script src="./js/jquery.mixitup.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
